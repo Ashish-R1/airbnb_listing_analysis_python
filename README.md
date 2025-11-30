@@ -18,25 +18,27 @@ Unlock key business drivers for Airbnb stakeholders in NYC.
 - The analysis covers over 100,000 active Airbnb listings spanning all major NYC neighborhoods.
 - **Key discoveries:**
     - Median listing price: $625 (range: $50–$1200).
-    - Brooklyn offers undervalued opportunities with high review rates in certain areas, while Manhattan listings command premium pricing but narrower review distribution.
-    - Entire home/apt listings consistently outperform private room listings in both price and occupancy.
+    - Manhattan and Brooklyn show the highest supply concentration (based on countplot generation).
+    - Entire home/apt commands the highest revenue potential.
     - Long-term hosts enjoy better review volumes and occupancy rates.
 - These insights can help optimize pricing strategies, target marketing efforts, and improve host retention.
 
 ## Stakeholder Insights & Recommendation
 
-| **Finding** | **Recommendation** |
-| --- | --- |
-| Manhattan commands higher prices but mid-level review rates. | Target pricing promotions in underperforming Manhattan areas. |
-| Brooklyn has lower pricing on average but higher review rates in select neighborhoods. | Prioritize host acquisition and support in emerging Brooklyn districts. |
-| High review volume correlates with host tenure (listing age). | Invest in host loyalty programs to boost retention and occupancy. |
-| Entire home/apt dominates both bookings and price. | Encourage new hosts to list entire homes for maximal returns. |
+| **Finding** (Derived Insight) | **Supporting Metric** | **Recommendation** |
+| --- | --- | --- |
+| Queens leads the market in listing price | **Avg Price: $629.98** | Neighborhood-based premium pricing benchmarking for hosts |
+| Bronx shows comparable high pricing tiers | **Avg Price: $627.63** | Expand listings while competition is still moderate |
+| Brooklyn remains a strong priced supply hub | **Avg Price: $626.48** | Assist hosts in optimizing listings instead of price cuts |
+| Staten Island listings price below top 3, but strong guest rating | **Avg Price: $623.31**, **Review Rate: 3.40** | Use guest satisfaction to drive visibility & bookings |
+| Manhattan price below top boroughs but still competitive | **Avg Price: $622.82**, **Review Rate: 3.27** | Apply targeted incentives only in low-engagement zones |
+| Entire home/apt outperforms other room categories | **Highest price tier in room-type box & comparison plots** | Guide new qualified hosts → entire home listings |
 
 ## Business-Relevant Questions Answered
 
 - What is the optimal room type to maximize revenue?
 - Which neighborhoods present high-growth opportunities for new listings?
-- Where do seasonal review surges occur, and how can hosts leverage them?
+- Are pricing clusters/outliers present?
 
 ## Pricing clusters and outlier zones.
 
@@ -59,22 +61,35 @@ Unlock key business drivers for Airbnb stakeholders in NYC.
 
 ## Demand hotspots and opportunities.
 
-![image alt](https://github.com/Ashish-R1/airbnb_listing_analysis_python/blob/9666c85aa0c444644e6cc4149a80ce93997ba78e/airbnb_images/NeighbourhoodGroup_listing.png)
+![image alt](https://github.com/Ashish-R1/airbnb_listing_analysis_python/blob/3603d7e56bf2824d71fa27a0a16bcebc6ffd6abb/airbnb_images/NeighbourhoodGroup_listing1.png)
 
-- **Insight:** Some neighborhoods (e.g., Manhattan, Brooklyn) have far more listings than others, indicating supply concentration.
+- **Insight:** Manhattan and Brooklyn have the highest number of listings, indicating supply concentration and potentially greater competition. Queens, Bronx, and Staten Island represent underserved markets.
+
 - **Actionable steps:**
-    - Target marketing, onboarding, and support in neighborhoods with less supply but increasing demand (e.g., Queens or Bronx).
-    - Use this data for city regulation negotiations or to identify saturation versus growth opportunities
- 
+    - Targeted host onboarding drives in Queens/Bronx/Staten Island to grow supply where competition is lower.
+    - Provide supply balancing guidance in oversaturated boroughs like Manhattan.
+    - Promote regional marketing campaigns tailored to emerging boroughs with growth headroom.
 
 ## Markets for targeted host onboarding
 
-![image alt](https://github.com/Ashish-R1/airbnb_listing_analysis_python/blob/9666c85aa0c444644e6cc4149a80ce93997ba78e/airbnb_images/Price_NeighbourhoodGroup.png)
+![image alt](https://github.com/Ashish-R1/airbnb_listing_analysis_python/blob/3603d7e56bf2824d71fa27a0a16bcebc6ffd6abb/airbnb_images/Price_NeighbourhoodGroup1.png)
 
-- **Insight:** Average listing price varies by neighborhood group, with Manhattan and Brooklyn near the top, but some less obvious groups may have pockets of opportunity.
+- **Insight:** Queens commands the highest average price, followed closely by Bronx and Brooklyn. Manhattan is priced lower than expected—indicating possible price inefficiencies or stronger competition.
+
 - **Actionable steps:**
-    - Host pricing strategies should be tailored to neighborhood, not just room type.
-    - Company could launch promotions or recommend pricing adjustments based on real-time neighborhood trends.
+    - Optimize pricing algorithms to reflect **true borough-level revenue potential**.
+    - Encourage hosts in Queens and Bronx to maintain **premium positioning** with amenities/quality.
+    - Recommend Manhattan hosts use **dynamic pricing** or seasonal promotions to boost engagement.
+
+![image alt](https://github.com/Ashish-R1/airbnb_listing_analysis_python/blob/3603d7e56bf2824d71fa27a0a16bcebc6ffd6abb/airbnb_images/Reviews_over_time1.png)
+
+**Insight:** Review activity varies noticeably over time, indicating seasonal demand cycles. Peaks likely align with travel seasons or holiday periods; dips reflect off-season lulls.
+
+**Actionable steps:**
+    - Implement seasonal pricing strategies —higher during peak tourism periods.
+    - Encourage hosts to offer discounts during slow months to maintain occupancy.
+    - Airbnb can use seasonality trends to schedule marketing boosts and host performance reminders.
+
 
 ## Analysis Approach
 
